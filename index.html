@@ -1,117 +1,20 @@
-<!-- zadanie2.html -->
-<!DOCTYPE html>
-<html lang="pl">
+<html>
 <head>
-    <meta http-equiv="content-type" content="text/html; charset=iso-8859-2">
-    <title>Definicja CSS</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 20px;
-        }
-        h1, h2 {
-            text-align: center;
-            font-size: 28px;
-            color: #333;
-        }
-        .content {
-            font-size: 18px;
-            line-height: 1.6;
-            text-align: justify;
-            margin: 0 auto;
-            width: 80%;
-        }
-        table {
-            width: 80%;
-            margin: 20px auto;
-            border-collapse: collapse;
-        }
-        table, th, td {
-            border: 1px solid #000;
-            padding: 10px;
-            text-align: center;
-        }
-        textarea {
-            width: 90%;
-            height: 100px;
-            margin: 10px auto;
-            display: block;
-        }
-        ul, ol {
-            margin: 10px 0;
-            padding-left: 20px;
-        }
-    </style>
+<META HTTP-EQUIV="content-type" CONTENT="text/html; CHARSET=iso-8859-2">
 </head>
 <body>
-    <h1>Definicja CSS - Kaskadowych Arkuszy Stylów</h1>
-    <div class="content">
-        <p><strong>CSS</strong> - Kaskadowe Arkusze Stylów (z ang. <em>Cascading Style Sheets</em>) jest to specjalny język stworzony w celu elastycznego zarządzania sposobem formatowania (wyglądem) elementów znajdujących się na stronach WWW.</p>
-        
-        <h2>Zadanie 3: Cechy modyfikowania formatowania</h2>
-        <table>
-            <tr>
-                <th>HTML</th>
-                <th>CSS</th>
-            </tr>
-            <tr>
-                <td>Modyfikacja wyglądu jest żmudna i chaotyczna.</td>
-                <td>Rozdzielenie struktury i wyglądu ułatwia zarządzanie.</td>
-            </tr>
-            <tr>
-                <td>Formatowanie w kodzie HTML.</td>
-                <td>Formatowanie w osobnym pliku CSS.</td>
-            </tr>
-        </table>
-        
-        <h3>Nowe możliwości CSS:</h3>
-        <ol>
-            <li>Lepsze zarządzanie wyglądem stron.</li>
-            <li>Przejrzystszy kod.</li>
-            <li>Łatwe zmiany dla wielu stron jednocześnie.</li>
-        </ol>
-
-        <h3>Wady CSS:</h3>
-        <ul>
-            <li>Złożona składnia nietolerująca błędów.</li>
-            <li>Brak sygnalizacji błędów.</li>
-            <li>Różna obsługa przez przeglądarki.</li>
-        </ul>
-
-        <h2>Zadanie 4: Sposoby podłączania CSS</h2>
-        <h3>1. Zewnętrzny arkusz stylów</h3>
-        <textarea readonly>
-<link rel="stylesheet" href="style.css">
-        </textarea>
-
-        <h3>2. Wewnętrzny arkusz stylów</h3>
-        <textarea readonly>
-<style>
-    body {
-        background-color: lightblue;
-    }
-</style>
-        </textarea>
-
-        <h3>3. Styl inline (liniowy)</h3>
-        <textarea readonly>
-<p style="color:red;">Przykładowy tekst</p>
-        </textarea>
-
-        <h3>4. Import stylów</h3>
-        <textarea readonly>
-<style>
-    @import url("style.css");
-</style>
-        </textarea>
-
-        <h3>5. Styl w atrybutach SVG</h3>
-        <textarea readonly>
-<svg width="100" height="100">
-    <circle cx="50" cy="50" r="40" stroke="black" stroke-width="3" fill="red" />
-</svg>
-        </textarea>
-    </div>
+<table width=95% border="1" align="center">
+ <tr>
+ <td width=18% align=center>
+ <a href="http://www.kuratorium.gda.pl" target="strony">Kuratorium</a>
+ <br>
+ <a href="http://www.wp.pl" target="strony">Portal WP</a>
+ </td>
+ <td align=center><iframe width=650 height=650 name="strony" src="start.html" border="0"></iframe>
+ </td>
+ <td width=18% align=center><a href="start.html" target="strony">Start</a>
+ </td>
+ </tr>
+</table>
 </body>
 </html>
-
