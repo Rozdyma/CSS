@@ -1,8 +1,9 @@
 p {
-color: blue;
-font-size: 30px;
-
-  color: green;
+color: green;
 font-size: 20px;
+ }
+body {
+  color: blue;
+font-size: 30px;
  }
 
