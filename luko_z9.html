@@ -73,13 +73,25 @@ p {
     </table>
 
     <h2>4. Ile arkuszy styli może być dołączonych?</h2>
-    <p>Do jednego dokumentu HTML można dołączyć wiele arkuszy stylów. Ważne jest, aby unikać konfliktów między stylami i pamiętać, że style z plików dołączonych później mogą nadpisywać wcześniejsze.</p>
+    <ul>
+        <li>Do jednego dokumentu HTML można dołączyć wiele arkuszy stylów.</li>
+        <li>Należy unikać konfliktów między stylami.</li>
+        <li>Style z plików dołączonych później mogą nadpisywać wcześniejsze.</li>
+    </ul>
 
     <h2>5. Co się dzieje w przypadku konfliktów w stylach?</h2>
-    <p>Jeśli te same style są zdefiniowane w różnych arkuszach i odnoszą się do tych samych elementów, przeglądarka stosuje styl z arkusza, który został załadowany później (chyba że użyto <code>!important</code>).</p>
+    <ol>
+        <li>Przeglądarka stosuje styl z arkusza, który został załadowany później.</li>
+        <li>Można użyć reguły <code>!important</code>, aby wymusić zastosowanie konkretnego stylu.</li>
+        <li>Styl zapisany w znaczniku <code>style</code> w dokumencie HTML ma wyższy priorytet niż arkusz zewnętrzny.</li>
+    </ol>
 
     <h2>6. Jak są tworzone i edytowane pliki arkuszy za pomocą edytora tekstowego?</h2>
-    <p>Pliki CSS można tworzyć i edytować w zwykłym edytorze tekstowym, takim jak Notatnik, zapisując je z rozszerzeniem <code>.css</code>.</p>
+    <ul>
+        <li>Pliki CSS można tworzyć w dowolnym edytorze tekstowym (np. Notatnik, VS Code, Sublime Text).</li>
+        <li>Plik powinien być zapisany z rozszerzeniem <code>.css</code>.</li>
+        <li>W celu podglądu zmian, plik CSS musi być dołączony do dokumentu HTML.</li>
+    </ul>
 
 </body>
 </html>
