@@ -3,95 +3,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Opis stylu zewnętrznego</title>
+    <title>Zewnętrzny arkusz stylów</title>
     <style>
         body {
             font-family: Arial, sans-serif;
         }
-        h1 {
-            font-size: 24px;
-        }
-        h2 {
-            font-size: 20px;
-        }
-        table {
-            border: 1px solid black;
-            border-collapse: collapse;
-            width: 100%;
-            margin: 10px 0;
-        }
-        td {
-            border: 1px solid black;
-            padding: 10px;
-            background-color: #f4f4f4;
-            font-family: Consolas, monospace;
-        }
     </style>
 </head>
 <body>
+<ol type="1">
+<li><h1>Gdzie jest wstawiany zewnętrzny arkusz stylów?</h1>
+<p>Zewnętrzny arkusz stylów jest wstawiany w sekcji <code>&lt;head&gt;</code> dokumentu HTML za pomocą znacznika <code>&lt;link&gt;</code>. Może być używany przez wiele stron jednocześnie.</p>
 
-    <h1>Opis stylu zewnętrznego</h1>
+<li><h2>Składnia teoretyczna</h2>
+<table border="1" cellspacing="0" cellpadding="10">
+<tr>
+<td>
+<pre>
+&lt;head&gt;
+    &lt;link rel="stylesheet" href="style.css"&gt;
+&lt;/head&gt;
+</pre>
+</td>
+</tr>
+</table>
+<p>Plik CSS zawiera reguły stylów, które mogą być stosowane do różnych dokumentów HTML.</p>
 
-    <h2>1. Składnia teoretyczna</h2>
-    <table>
-        <tr>
-            <td>
-                <pre>
-selektor {
-    cecha: wartość;
-}
-                </pre>
-            </td>
-        </tr>
-    </table>
-    <p>Przykład:</p>
-    <table>
-        <tr>
-            <td>
-                <pre>
-p {
-    color: blue;
-    font-size: 16px;
-}
-                </pre>
-            </td>
-        </tr>
-    </table>
-
-    <h2>2. Gdzie wstawiany jest styl zewnętrzny?</h2>
-    <p>Styl zewnętrzny jest wstawiany w sekcji <code>&lt;head&gt;</code> dokumentu HTML przy użyciu znacznika <code>&lt;link&gt;</code>. Może on występować wielokrotnie, ale zazwyczaj używa się jednego głównego pliku CSS.</p>
-
-    <h2>3. Najprostsza forma wstawiania stylu zewnętrznego</h2>
-    <table>
-        <tr>
-            <td>
-                <pre>
+<li><h3>Jak jest najprostsza forma wstawiania stylu zewnętrznego?</h3>
+<table border="1" cellspacing="0" cellpadding="10">
+<tr>
+<td>
+<pre>
 &lt;link rel="stylesheet" href="style.css"&gt;
-                </pre>
-            </td>
-        </tr>
-    </table>
+</pre>
+</td>
+</tr>
+</table>
+<p>W ten sposób dołączamy plik CSS do dokumentu HTML.</p>
 
-    <h2>4. Ile arkuszy styli może być dołączonych?</h2>
-    <ul>
-        <li>Do jednego dokumentu HTML można dołączyć wiele arkuszy stylów.</li>
-        <li>Należy unikać konfliktów między stylami.</li>
-        <li>Style z plików dołączonych później mogą nadpisywać wcześniejsze.</li>
-    </ul>
+<li><h4>Ile arkuszy styli można dołączyć?</h4>
+<p>Można dołączyć wiele arkuszy, ale obowiązuje zasada, że style załadowane później nadpisują wcześniejsze reguły.</p>
 
-    <h2>5. Co się dzieje w przypadku konfliktów w stylach?</h2>
-    <ol>
-        <li>Przeglądarka stosuje styl z arkusza, który został załadowany później.</li>
-        <li>Można użyć reguły <code>!important</code>, aby wymusić zastosowanie konkretnego stylu.</li>
-        <li>Styl zapisany w znaczniku <code>style</code> w dokumencie HTML ma wyższy priorytet niż arkusz zewnętrzny.</li>
-    </ol>
+<li><h5>Co się dzieje w przypadku konfliktów?</h5>
+<p>Jeżeli różne arkusze stylów definiują te same właściwości, priorytet ma ten, który został załadowany jako ostatni.</p>
 
-    <h2>6. Jak są tworzone i edytowane pliki arkuszy za pomocą edytora tekstowego?</h2>
-    <ul>
-        <li>Pliki CSS można tworzyć w dowolnym edytorze tekstowym (np. Notatnik, VS Code, Sublime Text).</li>
-        <li>Plik powinien być zapisany z rozszerzeniem <code>.css</code>.</li>
-        <li>W celu podglądu zmian, plik CSS musi być dołączony do dokumentu HTML.</li>
-    </ul>
+<li><h6>Jak są tworzone i edytowane arkusze?</h6>
+<ul>
+<li>W edytorze tekstowym – np. Notepad++, Visual Studio Code.</li>
+<li>W specjalnym edytorze CSS – np. Adobe Dreamweaver.</li>
+</ul>
 
+<li><h6>Jakie rozszerzenie posiada plik arkusza styli?</h6>
+<p>Plik CSS posiada rozszerzenie <code>.css</code>.</p>
+
+<li><h6>Jakie są zalety zewnętrznego arkusza styli?</h6>
+<ul>
+<li>Umożliwia oddzielenie struktury HTML od prezentacji.</li>
+<li>Jeden plik CSS może być stosowany do wielu stron.</li>
+</ul>
+
+<li><h6>Uwagi na temat pisania w CSS</h6>
+<p>Należy dbać o czytelność kodu, stosować komentarze i unikać nadmiarowego powielania reguł.</p>
+</ol>
 </body>
 </html>
