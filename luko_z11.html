@@ -1,67 +1,35 @@
 <!DOCTYPE html>
 <html lang="pl">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rodzaje selektorów</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-        }
-        h1 {
-            font-size: 2em;
-        }
-    </style>
 </head>
 <body>
-    <h1>11. Rodzaje selektorów w CSS</h1>
-
-    <p>Poniżej przedstawiono różne rodzaje selektorów w CSS:</p>
-
+    <h1>Rodzaje selektorów</h1>
     <ol>
-        <li><strong>Selektory podstawowe</strong>
-            <ul>
-                <li>Selektor typu (elementu) – np. <code>p</code>, <code>h1</code></li>
-                <li>Selektor uniwersalny – <code>*</code> (dotyczy wszystkich elementów)</li>
-            </ul>
+        <li>selektor prosty (selektor typu)</li>
+        <li>selektor uniwersalny</li>
+        <li>selektor potomka</li>
+        <li>selektor dziecka</li>
+        <li>selektor braci</li>
+        <li>selektor atrybutu
+            <ol type="a">
+                <li>prosty selektor atrybutu</li>
+                <li>selektor atrybutu o określonej wartości</li>
+                <li>selektor atrybutu zawierający określony wyraz</li>
+            </ol>
         </li>
-
-        <li><strong>Selektory złożone</strong>
-            <ul>
-                <li>Selektor potomka – np. <code>div p</code> (dotyczy <code>p</code> wewnątrz <code>div</code>)</li>
-                <li>Selektor dziecka – np. <code>div > p</code> (dotyczy tylko bezpośrednich dzieci <code>p</code> w <code>div</code>)</li>
-                <li>Selektor braci:
+        <li>selektory specjalne
+            <ol type="a">
+                <li>selektor klasy</li>
+                <li>pseudoklasy</li>
+                <li>selektory pseudoelementów
                     <ul>
-                        <li>Selektor sąsiadującego brata – np. <code>h1 + p</code> (dotyczy pierwszego <code>p</code> po <code>h1</code>)</li>
-                        <li>Selektor ogólnego brata – np. <code>h1 ~ p</code> (dotyczy wszystkich <code>p</code> po <code>h1</code>)</li>
+                        <li>pierwsza linia</li>
+                        <li>pierwsza litera</li>
                     </ul>
                 </li>
-            </ul>
-        </li>
-
-        <li><strong>Selektory atrybutów</strong>
-            <ul>
-                <li>Selektor atrybutu – np. <code>input[type="text"]</code></li>
-                <li>Selektor atrybutu o określonej wartości – np. <code>a[target="_blank"]</code></li>
-                <li>Selektor zawierający określony wyraz – np. <code>div[class~="box"]</code></li>
-            </ul>
-        </li>
-
-        <li><strong>Selektory specjalne</strong>
-            <ul>
-                <li>Selektor klasy – np. <code>.nazwa-klasy</code></li>
-                <li>Selektor identyfikatora – np. <code>#id-elementu</code></li>
-                <li>Pseudoklasy – np. <code>a:hover</code>, <code>:first-child</code></li>
-                <li>Pseudoelementy:
-                    <ul>
-                        <li><code>::first-line</code> – pierwsza linia tekstu</li>
-                        <li><code>::first-letter</code> – pierwsza litera</li>
-                    </ul>
-                </li>
-            </ul>
+            </ol>
         </li>
     </ol>
-
-    <p>Selektory CSS pozwalają na precyzyjne formatowanie elementów HTML, zapewniając elastyczność i kontrolę nad wyglądem strony.</p>
 </body>
 </html>
+
