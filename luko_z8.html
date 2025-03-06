@@ -3,33 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Styl wpisany</title>
+    <title>Wewnętrzny arkusz stylów</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+    </style>
 </head>
 <body>
+<ol type="1">
+<li><h1>Gdzie jest wstawiany wewnętrzny arkusz stylów?</h1>
+<p>Wewnętrzny arkusz stylów jest wstawiany w sekcji <code>&lt;head&gt;</code> dokumentu HTML wewnątrz znacznika <code>&lt;style&gt;</code>. Pozwala na definiowanie styli dla wielu elementów na jednej stronie.</p>
 
-    <h1>Wewnętrzny arkusz stylów jest wstawiany w sekcji <code>&lt;head&gt;</code> dokumentu HTML, wewnątrz znacznika <code>&lt;style&gt;</code>.</h1>
+<li><h2>Składnia teoretyczna</h2>
+<table border="1" cellspacing="0" cellpadding="10">
+<tr>
+<td>
+<pre>
+&lt;head&gt;
+    &lt;style&gt;
+        selektor {
+            właściwość: wartość;
+        }
+    &lt;/style&gt;
+&lt;/head&gt;
+</pre>
+</td>
+</tr>
+</table>
+<p>Wewnętrzny arkusz stylów definiuje reguły CSS w obrębie dokumentu HTML, co pozwala na modyfikację wyglądu bez potrzeby używania zewnętrznych plików.</p>
 
-    <h2>Składnia teoretyczna zawiera style, selektor i cechy wraz z wartościami.</h2>
+<li><h3>Jakie mogą być selektory?</h3>
+<p>W wewnętrznym arkuszu stylów można stosować różne selektory:</p>
+<ul>
+<li><strong>Selektor elementu</strong> – np. <code>p</code>, <code>h1</code>.</li>
+<li><strong>Selektor klasy</strong> – np. <code>.nazwa-klasy</code>.</li>
+<li><strong>Selektor ID</strong> – np. <code>#nazwa-id</code>.</li>
+<li><strong>Selektor atrybutów</strong> – np. <code>input[type="text"]</code>.</li>
+</ul>
 
-    <h3>Selektory mogą być:</h3>
-    <ul>
-        <li><strong>Selektor typu</strong> – odnosi się do wszystkich elementów danego typu (np. <code>p</code>, <code>h1</code>).</li>
-        <li><strong>Selektor klasy</strong> – definiowany przez <code>.</code> i stosowany do elementów z określoną klasą (np. <code>.nazwaKlasy</code>).</li>
-        <li><strong>Selektor ID</strong> – definiowany przez <code>#</code> i stosowany do elementu o konkretnym identyfikatorze (np. <code>#nazwaID</code>).</li>
-        <li><strong>Selektor atrybutów</strong> – odnosi się do elementów posiadających określony atrybut (np. <code>input[type="text"]</code>).</li>
-    </ul>
-
-    <h4>Cechy i wartości:</h4>
-    <ul>
-        <li><strong>Cechy (właściwości CSS)</strong> – np. <code>color</code>, <code>font-size</code>, <code>background-color</code>, <code>margin</code>, <code>padding</code>.</li>
-        <li><strong>Wartości</strong> – zależą od cechy, np.:
-            <ul>
-                <li>Dla <code>color</code>: <code>red</code> lub <code>#ff0000</code>.</li>
-                <li>Dla <code>font-size</code>: <code>16px</code>, <code>1.2em</code>, <code>120%</code>.</li>
-                <li>Dla <code>margin</code>: <code>10px</code>, <code>auto</code>, <code>5% 10%</code>.</li>
-            </ul>
-        </li>
-    </ul>
-
+<li><h4>Jakie mogą być cechy i wartości?</h4>
+<ul>
+<li><strong>Cechy</strong> (właściwości CSS) – definiują wygląd elementu, np. <code>color</code>, <code>font-size</code>, <code>margin</code>.</li>
+<li><strong>Wartości</strong> – określają sposób formatowania:
+<ul>
+<li>Dla <code>color</code>: <code>red</code>, <code>#ff0000</code>, <code>rgb(255, 0, 0)</code>.</li>
+<li>Dla <code>font-size</code>: <code>16px</code>, <code>1.2em</code>, <code>120%</code>.</li>
+<li>Dla <code>margin</code>: <code>10px</code>, <code>auto</code>, <code>5% 10%</code>.</li>
+</ul>
+</li>
+</ul>
+</ol>
 </body>
 </html>
+
