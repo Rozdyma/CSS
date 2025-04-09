@@ -2,38 +2,38 @@
 :root {
     --day: 3;
     --shoe: 42;
-    --month: 4; 
+    --month: 4;
 }
 
-
 p#pogrubienie_lukowski {
-    font-size: 25px + 7px; 
-    color: #7B2A4D; 
+    font-size: 32px;
+    color: #80B8CC;
 }
 
 p#pochylona_lukowski {
-    font-size: 30pt; 
-    color: #E1A52A; 
+    font-size: 37pt;
+    color: #E4C864;
 }
 
 p#index_gorny_lukowski {
-    font-size: calc(0.5cm + 0.1 * 7cm); 
-    color: #A58C1E; 
+    font-size: calc(0.5cm + 0.7cm);
+    color: #94928C;
 }
-
 
 p#index_dolny_lukowski {
-    font-size: calc(0.5cm + 0.2 * 7cm); 
-    color: rgba(45, 200, 220, 1);
+    font-size: calc(0.5cm + 1.4cm);
+    color: rgba(48, 242, 224, 1);
 }
-
 
 p#mono_lukowski {
-    font-size: 35px + 7px; 
-    color: #1196A4; 
+    font-size: 42px;
+    color: #14DE68;
 }
 
-
 p#powiekszenie_lukowski {
-    color: #4B2A96;
+    color: #4E3E9E;
+}
+
+p#pomniejszenie_lukowski {
+    color: #B5A8A4;
 }
