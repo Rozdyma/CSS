@@ -1,10 +1,4 @@
 
-:root {
-    --day: 3;
-    --shoe: 42;
-    --month: 4;
-}
-
 p#pogrubienie_lukowski {
     font-size: 32px;
     color: #80B8CC;
@@ -16,12 +10,12 @@ p#pochylona_lukowski {
 }
 
 p#index_gorny_lukowski {
-    font-size: calc(0.5cm + 0.7cm);
+    font-size: (1.2cm);
     color: #94928C;
 }
 
 p#index_dolny_lukowski {
-    font-size: calc(0.5cm + 1.4cm);
+    font-size: (1.9cm);
     color: rgba(48, 242, 224, 1);
 }
 
