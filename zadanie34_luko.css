@@ -10,7 +10,7 @@ border-top: 2px groove #C0C0C0;
 border-bottom: 2px groove #FF00FF;
 border-left: 4px groove #808080;
 border-right: 4px groove #C0C0C0;
-margin-left: 1200px;
+margin-left: 500px;
 padding-left: 10px;
 }
 /* blok środkowy */
@@ -19,7 +19,7 @@ width: 200pt;
 height: 3cm;
 background: #FFFFFF;
 border: 3px inset #800000;
-margin-left:600px; 
+margin-left:300px; 
 text-align: center;
 }
 /* blok dolny */
@@ -28,7 +28,7 @@ width: 300pt;
 height: 4cm;
 background: #FFFFFF;
 border: 2px double #008080;
-margin-left: 100px;
+margin-left: 10px;
 font-size: 12px;
 }
 /*kacper lukowski*/
