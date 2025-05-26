@@ -10,7 +10,8 @@ border-top: 2px groove #C0C0C0;
 border-bottom: 2px groove #FF00FF;
 border-left: 4px groove #808080;
 border-right: 4px groove #C0C0C0;
-margin-right: 30%;
+margin-right: 100px;
+margin-top: 50px;
 padding-left: 10px;
 }
 /* blok środkowy */
@@ -19,8 +20,8 @@ width: 200pt;
 height: 3cm;
 background: #FFFFFF;
 border: 3px inset #800000;
-margin-right: 60%;
-margin-top: 50%;
+margin-top:250px;
+margin-left:200px; 
 text-align: center;
 }
 /* blok dolny */
@@ -29,8 +30,8 @@ width: 300pt;
 height: 4cm;
 background: #FFFFFF;
 border: 2px double #008080;
-margin-left: 30%;
-margin-top:90%;
+margin-left: 100px;
+margin-bottom:250px;
 font-size: 12px;
 margin-top: 5%;
 }
